@@ -21,6 +21,15 @@ Product.init(
       type:DataTypes.STRING,
       allowNull: false
 
+    },
+    //defining price column
+    price: {
+      type: DataTypes.DECIMAL(10,5),
+      allowNull: false,
+      validate: {
+        isDecimal: true
+      }
+
     }
 
   },
