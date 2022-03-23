@@ -14,7 +14,13 @@ Product.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      autoIncrement: true
+    },
+    // defining product_name columns
+    product_name: {
+      type:DataTypes.STRING,
+      allowNull: false
+
     }
 
   },
