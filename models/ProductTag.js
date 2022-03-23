@@ -21,7 +21,17 @@ ProductTag.init(
         model: "product",
         key: "id"
       }
+    },
+
+    //defining tag_id
+    tag_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "tag",
+        key: "id"
+      }
     }
+
   },
   {
     sequelize,
