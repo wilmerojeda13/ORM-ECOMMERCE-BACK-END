@@ -12,6 +12,11 @@ Tag.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
+    },
+
+    //defining the tag_name columns
+    tag_name: {
+      type: DataTypes.STRING
     }
   },
   {
