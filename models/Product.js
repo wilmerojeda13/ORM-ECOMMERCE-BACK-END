@@ -30,7 +30,8 @@ Product.init(
       allowNull: false,
       validate: {
         isDecimal: true
-      },
+      }
+    },
 
     // defining stock columns
     stock: {
@@ -40,9 +41,17 @@ Product.init(
       validate: {
         isNumeric: true
       }
+    },
+
+     //defining category_id column
+     category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "category",
+        key: "id"
+      }
     }
 
-    }
 
   },
   {
