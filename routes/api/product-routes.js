@@ -46,7 +46,7 @@ router.get('/:id', (req, res) => {
       }
     ]
   }).then(dbProductData => {
-    if(!dbProductData[0]) {
+    if(!dbProductData) {
       res.status(404).json({message: 'No tag found with this id'});
       return;
     }
@@ -152,7 +152,6 @@ router.delete('/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
-  
-});
+
 
 module.exports = router;
