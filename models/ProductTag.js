@@ -11,7 +11,7 @@ ProductTag.init(
       type:DataTypes.INTEGER,
       allowNull: false,
       primaryKey:true,
-      autoIncrement:true
+      autoIncrement: true
     },
 
     //defining product id_
@@ -38,7 +38,7 @@ ProductTag.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product_tag',
+    modelName: 'product_tag'
   }
 );
 
