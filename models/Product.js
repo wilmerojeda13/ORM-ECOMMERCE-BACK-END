@@ -26,7 +26,7 @@ Product.init(
 
     // defining price column
     price: {
-      type: DataTypes.DECIMAL(10,5),
+      type: DataTypes.DECIMAL(10,2),
       allowNull: false,
       validate: {
         isDecimal: true
@@ -46,6 +46,7 @@ Product.init(
      //defining category_id column
      category_id: {
       type: DataTypes.INTEGER,
+      allowNull:true,
       references: {
         model: "category",
         key: "id"
@@ -59,7 +60,7 @@ Product.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product',
+    modelName: 'product'
   }
 );
 
