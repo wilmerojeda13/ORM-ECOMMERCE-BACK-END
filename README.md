@@ -19,6 +19,7 @@ We are going to used npm install in the terminal  to install all the packages ne
 ## Usage:
 We used the project by cloning the repo and and start the project by installing the dependencies using npm i, and then your going to go to the terminal and do a npm start or type node server.js to display the server that contains our work, and node seeds to display the main info for the categories, make sure to take in count after you receive the localhost signal your going add an / and then the routes that your going to test
 ⬇️
+
 /categories, /products, /tags and id using, / and the id number that your going to test.
 
 
